@@ -1,0 +1,4 @@
+---
+deployment:
+  tasks:
+  - export DEPLOYPATH=/home/s32cavug58jx/public_html/
