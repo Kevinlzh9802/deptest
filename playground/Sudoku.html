@@ -6,7 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../assets/css/bootstrap.css">
   <link rel="stylesheet" href="../assets/css/styles.css">
-  <title>广场</title>
+	<link rel="stylesheet" href="../assets/css/sudoku.css">
+  <title>Sudoku</title>
 </head>
 <body>
   <header>
@@ -41,7 +42,7 @@
               <a class="nav-link" href="../archive/archive.html">归档</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">广场</a>
+              <a class="nav-link" href="../playground/playground.html">广场</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../about/about.html">关于</a>
@@ -54,65 +55,23 @@
       </div>
     </nav>
 	</header>
-	
-	<div class="container">
-		<div class="row">
-      <div class="col-lg-12 col-md-12 col-sm-12">
-        <div class="alert alert-info" role="alert">
-          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-info-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-            <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z"/>
-            <circle cx="8" cy="4.5" r="1"/>
-          </svg>
-          网站正在建设中！
-        </div>
-      </div>
-		</div>
-	</div>
 
 	<div class="container">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="../index.html">首页</a></li>
-      <li class="breadcrumb-item active" aria-current="page">广场</li>
+      <li class="breadcrumb-item"><a href="playground.html">广场</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Sudoku</li>
     </ol>
 	</div>
 
 	<div id="main-content" class="container">
-		<h2>广场</h2>
+		<h2>Sudoku</h2>
 		<div class="row">
-			<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-        <div class="card">
-          <a href="FootballPage.html">
-            <img src="https://getbootstrap.com/docs/4.5/assets/img/bootstrap-icons.png" class="card-img-top hidden-xs" alt="Bootstrap">
-            <div class="card-body">
-              <p class="card-text">Football something</p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-        <div class="card">
-          <a href="StringGenerator.html">
-            <img src="https://getbootstrap.com/docs/4.5/assets/img/bootstrap-icons.png" class="card-img-top hidden-xs" alt="Bootstrap">
-            <div class="card-body">
-              <p class="card-text">密码生成</p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-        <div class="card">
-          <a href="Sudoku.html">
-            <img src="https://getbootstrap.com/docs/4.5/assets/img/bootstrap-icons.png" class="card-img-top hidden-xs" alt="Bootstrap">
-            <div class="card-body">
-              <p class="card-text">Sudoku</p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div> <!--  End of row -->
+			<div class="container">
+				<div class="cell r1 c1"></div>
+				<div class="cell r1 c2"></div>
+			</div>
+		</div>
 	</div>
 	
 	<footer class="panel-footer">
@@ -147,6 +106,7 @@
 
 	<script src="../assets/js/jquery-1.11.3.min.js"></script>
   <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/ajax-utils.js"></script>
   <script src="../assets/js/script.js"></script>
 </body>
 </html>
